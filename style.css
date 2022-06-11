@@ -125,3 +125,52 @@ h2 {
     margin-top: -16px;
     margin-bottom: 16px;
 }
+
+#testimonial {
+    text-align: center;
+    padding: 52px 0;
+}
+
+.testimonial-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 52px;
+    margin-left: 121px;
+    margin-right: 121px;
+    grid-gap: 52px;
+    font-size: 28px;
+}
+
+.testimonial-content p {
+    text-align: left;
+}
+
+.card-img {
+    margin-top: 87px;
+    background: #F4BC33;
+    width: 332px;
+    height: 220px;
+    border-radius: 8px;
+    margin-bottom: 38px;
+}
+
+.card-img img {
+    margin-top: -87px;
+}
+
+.card-img h2 {
+    margin-top: 40px;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: left;
+    padding-left: 27px;
+}
+
+.card-img p {
+    position: relative;
+    bottom: 87px;
+    font-size: 28px;
+    font-weight: 800;
+    text-align: left;
+    padding-left: 27px;
+}
