@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -10,8 +11,13 @@ body {
     font-size: 16px;
 }
 
+a {
+    text-decoration: none;
+    color: initial;
+}
+
 .navbar {
-    height: 168px;
+    height: 10.5em;
     background: black;
 }
 
@@ -22,12 +28,19 @@ body {
     background: #F4BC33;
 }
 
+@media only screen and (max-width: 540px) {
+    .landing-page-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 .word-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 111px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-top: 6.93em;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
 }
 
 h2 {
@@ -36,17 +49,21 @@ h2 {
     line-height: 54px;
 }
 
-.btn {
-    margin-top: 140px;
+.word-wrapper form {
     margin-left: auto;
     margin-right: auto;
-    width: 296px;
-    height: 55px;
+}
+
+.btn {
+    margin-top: 8.75em;
+    width: 18.5em;
+    height: 3.43em;
     font-size: 20px;
     font-weight: 800;
     border: none;
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -55,12 +72,19 @@ h2 {
     border: 2px solid white;
 }
 
+@media only screen and (max-width: 540px) {
+    .btn {
+        margin-top: 6em;
+        margin-bottom: 2em;
+    }
+}
+
 #about {
     background: black;
     color: white;
     text-align: center;
-    padding-top: 43px;
-    padding-bottom: 133px;
+    padding-top: 2.68em;
+    padding-bottom: 8.31em;
 }
 
 #about h2 {
@@ -68,14 +92,20 @@ h2 {
 }
 
 #about img {
-    margin: 83px 0;
+    margin: 5.18em 0;
 }
 
 #about p {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
-    margin: 0 140px;
+    margin: 0 8.75em;
+}
+
+@media only screen and (max-width: 540px) {
+    #about p {
+        margin: 0 3em;
+    }
 }
 
 #price-and-plans {
@@ -86,25 +116,34 @@ h2 {
 .heading {
     background: black;
     color: white;
-    padding: 70px 0;
+    padding: 4.5em 0;
 }
 
 .heading h2 {
     color: #F4BC33;
-    margin-bottom: 8px;
+    margin-bottom: 0.5em;
 }
 
 .price-content {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 53px;
-    padding: 70px 191px;
+    grid-gap: 3.31em;
+    padding: 4.3em 11.93em;
+}
+
+@media only screen and (max-width: 540px) {
+    .price-content {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        padding: 4.3em;
+    }
 }
 
 .price-card {
     background: white;
-    padding-top: 12px;
-    padding-bottom: 81px;
+    padding-top: 0.75em;
+    padding-bottom: 5.06em;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 24px;
 }
@@ -113,7 +152,13 @@ h2 {
     font-size: 40px;
     font-weight: 800;
     color: #F4BC33;
-    margin-bottom: 67px;
+    margin-bottom: 2.18em;
+}
+
+@media only screen and (max-width: 540px) {
+    .price-card h2 {
+        margin-bottom: 2em;
+    }
 }
 
 .price {
@@ -122,23 +167,32 @@ h2 {
 }
 
 .per-month {
-    margin-top: -16px;
-    margin-bottom: 16px;
+    margin-top: -1em;
+    margin-bottom: 1em;
 }
 
 #testimonial {
     text-align: center;
-    padding: 52px 0;
+    padding: 3.25em 0;
 }
 
 .testimonial-content {
     display: grid;
     grid-template-columns: auto auto auto;
-    margin-top: 52px;
-    margin-left: 121px;
-    margin-right: 121px;
-    grid-gap: 52px;
+    margin-top: 2.25em;
+    margin-left: 2.56em;
+    margin-right: 2.56em;
+    grid-gap: 2.25em;
     font-size: 28px;
+}
+
+@media only screen and (max-width: 540px) {
+    .testimonial-content {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+        margin-left: 1.3em;
+        margin-right: 1.3em;
+}
 }
 
 .testimonial-content p {
@@ -146,31 +200,111 @@ h2 {
 }
 
 .card-img {
-    margin-top: 87px;
+    margin-top: 5.43em;
     background: #F4BC33;
-    width: 332px;
-    height: 220px;
+    width: 12.75em;
+    height: 10.75em;
     border-radius: 8px;
-    margin-bottom: 38px;
+    margin-bottom: 2.37em;
 }
 
 .card-img img {
-    margin-top: -87px;
+    margin-top: -3.43em;
 }
 
+@media only screen and (max-width: 540px) {
+    .card-img {
+        width: 12.75em;
+        height: 7.75em;
+    }
+    .card-img img {
+        margin-top: -3.43em;
+    }
+}
+
+
 .card-img h2 {
-    margin-top: 40px;
+    margin-top: 1.5em;
     font-size: 28px;
     font-weight: 800;
     text-align: left;
-    padding-left: 27px;
+    padding-left: 1.68em;
+}
+
+@media only screen and (max-width: 540px) {
+    .card-img h2 {
+        margin-top: 0.5em;
+    }
 }
 
 .card-img p {
-    position: relative;
-    bottom: 87px;
+    padding-top: 1.43em;
     font-size: 28px;
     font-weight: 800;
     text-align: left;
-    padding-left: 27px;
+    padding-left: 1.68em;
+}
+
+@media only screen and (max-width: 540px) {
+    .card-img p {
+        padding-top: 0.43em;
+    }
+}
+
+#contact {
+    background: #F4BC33;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 540px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.contact-word-wrapper {
+    padding-top: 3.5em;
+}
+
+.contact-word-wrapper h2 {
+    margin-left: 4.87em;
+    margin-bottom: 3.12em;
+}
+
+@media only screen and (max-width: 540px) {
+    .contact-word-wrapper h2 {
+        margin-left: 1.87em;
+        margin-bottom: 1.12em;
+    }
+}
+
+.contact-word-wrapper p {
+    margin-left: 9.62em;
+    padding-top: 1.87em;
+}
+
+@media only screen and (max-width: 540px) {
+    .contact-word-wrapper p {
+        margin-left: 1.62em;
+    }
+}
+
+.icon-wrapper {
+    margin-top: 6.31em;
+    margin-left: 6.81em;
+}
+
+@media only screen and (max-width: 540px) {
+    .icon-wrapper {
+        margin-bottom: 6.31em;
+    }
+}
+
+.icon-wrapper img {
+    padding-left: 1.18em;
 }
